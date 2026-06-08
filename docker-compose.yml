@@ -14,7 +14,7 @@ services:
     build:
       context: ./client
     ports:
-      - "${CLIENT_PORT:-8080}:80"
+      - "80:80"
     depends_on:
       - server
     restart: unless-stopped
