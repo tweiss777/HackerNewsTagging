@@ -1,6 +1,6 @@
-import type { HNStory } from '@/types/HNStory'
-import type { IntentTag, TopicTag } from '@/types/StoryRecord'
-import type { UserProfile } from '@/types/UserProfile'
+import type { HNStory } from '../types/HNStory.js'
+import type { IntentTag, TopicTag } from '../types/StoryRecord.js'
+import type { UserProfile } from '../types/UserProfile.js'
 
 export function computeIntent(
   story: HNStory,

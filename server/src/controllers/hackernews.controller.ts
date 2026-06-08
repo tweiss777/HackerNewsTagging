@@ -1,5 +1,5 @@
 import type { Request, Response, NextFunction } from 'express'
-import * as hackerNewsService from '../services/hackernews.service'
+import * as hackerNewsService from '../services/hackernews.service.js'
 
 export async function getTopStories(_req: Request, res: Response, next: NextFunction) {
   try {

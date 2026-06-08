@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import * as hackerNews from '@/controllers/hackernews.controller'
+import * as hackerNews from '../controllers/hackernews.controller.js'
 const hackerNewsRouter = Router()
 
 hackerNewsRouter.get('/:id/summarize', hackerNews.summarizeStory)

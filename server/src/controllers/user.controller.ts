@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from 'express'
-import * as userService from '../services/user.service'
-import type { TopicTag } from '@/types/StoryRecord'
+import * as userService from '../services/user.service.js'
+import type { TopicTag } from '../types/StoryRecord.js'
 
 export function getProfile(_req: Request, res: Response, next: NextFunction) {
   try {

@@ -1,6 +1,6 @@
-import type { HNStory } from '@/types/HNStory'
-import type { TopicTag } from '@/types/StoryRecord'
-import { generateTags } from './openai.service'
+import type { HNStory } from '../types/HNStory.js'
+import type { TopicTag } from '../types/StoryRecord.js'
+import { generateTags } from './openai.service.js'
 
 export async function assignTags(story: HNStory): Promise<TopicTag[]> {
   const tags = new Set<TopicTag>()

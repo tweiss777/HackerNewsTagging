@@ -6,11 +6,11 @@
     "outDir": "./dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "ESNext",
+    "module": "NodeNext",
     "target": "esnext",
     "lib": ["esnext"],
     "types": ["node"],
-    "moduleResolution": "bundler",
+    "moduleResolution": "NodeNext",
 
     // Other Outputs
     "sourceMap": true,
@@ -31,10 +31,6 @@
     // Recommended Options
     "strict": true,
     "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,

@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express, { type Request, type Response, type NextFunction } from 'express'
-import { hackerNewsRouter } from './routes/hackernews.routes'
-import { userRouter } from './routes/user.routes'
+import { hackerNewsRouter } from './routes/hackernews.routes.js'
+import { userRouter } from './routes/user.routes.js'
 const app = express()
 app.use(express.json())
 const PORT = process.env.PORT ?? 3000

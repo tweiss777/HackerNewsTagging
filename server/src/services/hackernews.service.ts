@@ -1,10 +1,10 @@
 import axios from 'axios'
-import { summarize } from './openai.service'
-import type { StoryRecord, TopicTag } from '@/types/StoryRecord'
-import type { HNStory } from '@/types/HNStory'
-import { assignTags } from './classifier.service'
-import { USER_PROFILE } from '@/types/UserProfile'
-import { computeIntent } from './intent.service'
+import { summarize } from './openai.service.js'
+import type { StoryRecord, TopicTag } from '../types/StoryRecord.js'
+import type { HNStory } from '../types/HNStory.js'
+import { assignTags } from './classifier.service.js'
+import { USER_PROFILE } from '../types/UserProfile.js'
+import { computeIntent } from './intent.service.js'
 
 const hackerNewsInstance = axios.create({
   baseURL: 'https://hacker-news.firebaseio.com',

@@ -1,5 +1,5 @@
-import type { TopicTag } from '@/types/StoryRecord'
-import { USER_PROFILE } from '@/types/UserProfile'
+import type { TopicTag } from '../types/StoryRecord.js'
+import { USER_PROFILE } from '../types/UserProfile.js'
 
 export function getProfile() {
   return USER_PROFILE

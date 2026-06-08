@@ -21,7 +21,7 @@ RUN corepack enable
 ENV NODE_ENV=production
 
 COPY package.json yarn.lock .yarnrc.yml ./
-RUN yarn install --immutable --production
+RUN yarn install --immutable
 
 COPY --from=builder /app/dist ./dist
 
