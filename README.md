@@ -7,7 +7,11 @@
 
 ## How to run it
 
-- In `docker-compose.yml`, assign env variables for `OPEN_AI_API_KEY` and `OPEN_AI_MODEL`. If no model is passed then it defaults to `gpt-5.4`,
+- In `docker-compose.yml`, assign env variables for `OPEN_AI_API_KEY` and `OPEN_AI_MODEL`. If no model is passed then it defaults to `gpt-5.4`.
+- Run `docker compose up` and point your browser to `http://localhost`.
+- You can also launch the client and server separately if you don't wish to run it through docker
+  **Client** - Run `yarn dev`
+  **Server** - Run `yarn watch`
 
 ## What works
 
@@ -40,7 +44,6 @@
 - **Unbounded feed loading** — The server fetches every story id in a feed and tags each one individually, which is slow and can trigger many OpenAI calls on first load.
 - **Embeddings / semantic search** — The `embedding` field is defined but never populated or used.
 - **No personalized feed ordering** — Stories are sorted by date only; there is no ranking by intent or user interests.
-
 
 ## Tradeoffs made
 
