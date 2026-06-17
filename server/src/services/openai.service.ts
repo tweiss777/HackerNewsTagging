@@ -78,6 +78,13 @@ export async function summarize(text: string, url: string) {
   return stream
 }
 
+/**
+ * Generate tags for a story based on the title, url, and text
+ * @param url - The url of the story
+ * @param title - The title of the story
+ * @param text - The text of the story
+ * @returns The tags for the story
+ */
 export async function generateTags(url: string, title: string, text: string) {
   const response = await openAiClient.responses.create({
     model: AI_MODEL,

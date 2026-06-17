@@ -2,6 +2,13 @@ import type { HNStory } from '../types/HNStory.js'
 import type { IntentTag, TopicTag } from '../types/StoryRecord.js'
 import type { UserProfile } from '../types/UserProfile.js'
 
+/**
+ * Compute the intent of a story based on the topic tags and the user profile
+ * @param story - The story to compute the intent for
+ * @param topicTags - The topic tags of the story
+ * @param profile - The user profile
+ * @returns The intent of the story
+ */
 export function computeIntent(
   story: HNStory,
   topicTags: TopicTag[],
